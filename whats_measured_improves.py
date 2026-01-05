@@ -1,6 +1,9 @@
+
+import plotly.express as px
 import io
 import json
 from datetime import date
+
 
 import streamlit as st
 from google.oauth2 import service_account
@@ -167,4 +170,5 @@ with save_col2:
 st.divider()
 st.subheader("Preview")
 st.markdown(note if note.strip() else "_Nothing yet._")
+
 
