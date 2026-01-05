@@ -1,14 +1,12 @@
-
-import plotly.express as px
 import io
 import json
 from datetime import date
-
 
 import streamlit as st
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload, MediaIoBaseUpload
+
 
 APP_MIN_DATE = date(2026, 1, 1)
 
@@ -170,5 +168,6 @@ with save_col2:
 st.divider()
 st.subheader("Preview")
 st.markdown(note if note.strip() else "_Nothing yet._")
+
 
 
